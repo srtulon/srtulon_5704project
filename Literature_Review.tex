@@ -1,4 +1,3 @@
-
 % ===========================================================================
 % Title:
 % ---------------------------------------------------------------------------
@@ -42,8 +41,8 @@
                                  [width=4in,keepaspectratio] %comment this line to disable scaling
                                  {#2}\caption{\label{#1}#3} \end{center} \end{figure}}
                                  % usage: \includeFig{label}{file}{caption}
-\usepackage{biblatex}
-\addbibresource{my-bibliography.bib}
+
+
 % ===========================================================================
 \begin{document}
 % ===========================================================================
@@ -52,7 +51,7 @@
 % Title
 % ############################################################################
 
-\title{An Effective way to optimize performance and battery life of smart devices using multi-kernel approach}
+\title{LITERATURE REVIEW: An Effective way to optimize performance and battery life of smart devices using multi-kernel approach}
 
 
 % ############################################################################
@@ -60,9 +59,9 @@
 \author{
 % ############################################################################
 Sadid Rafsun Tulon\\
-Faculty of Engineering\\
-University of Ottawa\\
-Ottawa, Canada K1N 6N5\\
+School of Computer Science\\
+Carleton University\\
+Ottawa, Canada K1S 5B6\\
 {\em stulo080@uottawa.ca}
 % ############################################################################
 } % end-authors
@@ -70,43 +69,36 @@ Ottawa, Canada K1N 6N5\\
 
 \maketitle
 
-% ############################################################################
-% Abstract
-% ############################################################################
-\begin{abstract}
-A very concise summary of the problem addressed and solution presented in this paper.
-\end{abstract}
 
 
 % ############################################################################
 \section{Introduction} \label{intro}
 % ############################################################################
 
-Introduce your project topic (start from parallel computing in
-general and lead to your particular topic). Describe your project
-goals. Describe what you have achieved in your project. Outline
-the structure of your paper: In Section~\ref{litrev}, we will
-review the relevant literature.  ...
-Section~\ref{concl} concludes the paper.
+As we are living in the modern world, smart devices have become an integral part of our life. As these smart devices become more capable, they are able to accomplish much more than before. Many of the smart devices are battery-powered. The current battery technology is the biggest handicap of portable smart devices right now. As CPUs and system on a chip(SoC)’s are improving their efficiency, things are getting better. However, modern software also demands more processing power which drains the battery faster. The lightweight kernels can extend battery life much further, but their software compatibility is far from ideal. Now that battery technology reached a plateau and transistors in the semiconductors are also close to reaching their size limit, we are in desperate need of an alternate way of achieving better battery life without compromising performance and compatibility. A new approach using multiple operating system (OS) kernels can help to mitigate this problem. Almost all modern chips are multi-core. We can use these multi-core chips to run multiple OS kernels same at the same time. Ideally one of the kernels is a lightweight kernel for better performance and battery life, and a monolithic kernel for better compatibility. The system can switch between the kernels, run them simultaneously, or stop them from running depending on the need. This way we will be able to get better battery life while still retaining the software compatibility. This research is an effort to optimize performance, compatibility, and battery life by utilizing a multi-kernel approach while using existing battery technology. 
+
+In this project, the idea is to research if we fit two operating systems for both cores of multi-core processors individually and how they perform.
 
 
 % ############################################################################
 \section{Literature Review} \label{litrev}
 % ############################################################################
+The current hardware technology is changing rapidly. The software is struggling to keep up with  this rapid change . Thus it has become very challenging to optimize software for a specific hardware\cite{DEL02} . So we need a new OS structure which can be as scalabe as needed. Most modern system use multicore processor. We can leverage this to our advantage.
 
-Give an overview of the relevant literature. Cite all relevant
-papers, like \cite{DEL07}, \cite{PD07}, \cite{DER07}, \cite{LDR07},
-\cite{DLX06}, \cite{CDE06}, and \cite{DFL06}. Outline for each paper
-the relevant results in relation to your project. Make sure that you
-don't just list all relevant papers in random order. Devise a scheme
-to group papers by subject. The goal of this section is to present
-to the reader the state-of-the-art in the field selected for your
-project.
+Light Weight Kernels (LWKs) are not new. They are here for at least 30 years \cite{DEL04}. But they are only gaining popularity in these past couple of years because of High-Performance Computing (HPC). HPC requires extreme scalability which the complex Full-Weight Kernel (FWKs) are very slow in adapting. LWKs work extremely well with highly scalable systems as they have a simple codebase. Moreover, they have better performance and efficiency than FWKs. However, LWKs only devices would have extremely limited functionality as they have limited compatibility with the standard  APIs \cite{DEL03}, \cite{DEL01} . Another major issue of LWKs are driver support. As LWKs have simple codebase mainly focusing on perfromance, they are missing many advance features that FWKs have. \cite{DEL03} In order to achive more performance and efficiency out of the system without sacrificing software and hardware compatibility, multikernel operating systems have been proposed. Multikernel OS runs both FWK and LWK side by side divides their tasks.[performance and scalabily] The LWK usually responsible for  the high performance tasks and FWK is there for ensuring compatibility, driver support and also as a backup system.\cite{DEL03}. This system works fairly well in high performance super computers. 
 
-% % Bibliography
+Figure~\ref{fig2} shows the system architecture of a multikernel system.
+
+\includeFig{fig2}{Figures/figure.png}{System Architectural Overview \cite{DEL07}}
+
+In this paper we will explore if we can use this multikernel method on the battery powered smart devices. We will compare performance and power efficiency between single linux kernel system and multikernel system. As batteries have very small capacity, ensuring longer battery life is the most import part of this project. Thus power efficiency will be one of the main focus of this research project.
+
+
 % ############################################################################
-
-\printbibliography     %loads my-bibliography.bib
+% Bibliography
+% ############################################################################
+\bibliographystyle{ACM-Reference-Format} 
+\bibliography{my-bibliography.bib}     %loads my-bibliography.bib
 
 % ============================================================================
 \end{document}
