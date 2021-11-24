@@ -1,3 +1,4 @@
+
 % ===========================================================================
 % Title:
 % ---------------------------------------------------------------------------
@@ -75,7 +76,7 @@ Ottawa, Canada K1S 5B6\\
 \section{Introduction} \label{intro}
 % ############################################################################
 
-As we are living in the modern world, smart devices have become an integral part of our life. As these smart devices become more capable, they are able to accomplish much more than before. Many of the smart devices are battery-powered. The current battery technology is the biggest handicap of portable smart devices right now. As CPUs and system on a chip(SoC)’s are improving their efficiency, things are getting better. However, modern software also demands more processing power which drains the battery faster. The lightweight kernels can extend battery life much further, but their software compatibility is far from ideal. Now that battery technology reached a plateau and transistors in the semiconductors are also close to reaching their size limit, we are in desperate need of an alternate way of achieving better battery life without compromising performance and compatibility. A new approach using multiple operating system (OS) kernels can help to mitigate this problem. Almost all modern chips are multi-core. We can use these multi-core chips to run multiple OS kernels same at the same time. Ideally one of the kernels is a lightweight kernel for better performance and battery life, and a monolithic kernel for better compatibility. The system can switch between the kernels, run them simultaneously, or stop them from running depending on the need. This way we will be able to get better battery life while still retaining the software compatibility. This research is an effort to optimize performance, compatibility, and battery life by utilizing a multi-kernel approach while using existing battery technology. 
+Smart devices have become an integral part of our life. Many of the smart devices are battery-powered. The current battery technology is the biggest handicap of portable smart devices right now. As CPUs and system on a chip(SoC)’s are improving their efficiency, things are getting better. However, modern software also demands more processing power which drains the battery faster. The lightweight kernels can extend battery life much further, but their software compatibility is far from ideal. Now that battery technology reached a plateau and transistors in the semiconductors are also close to reaching their size limit, we are in need of an alternate way of achieving better battery life without compromising performance and compatibility. A new approach using multiple operating system (OS) kernels can help to mitigate this problem. Almost all modern chips are multi-core. We can use these multi-core chips to run multiple OS kernels at the same time. Ideally one of the kernels is a lightweight kernel for better performance and battery life, and a monolithic kernel for better compatibility. The system can switch between the kernels, run them simultaneously, or stop them from running depending on the need. This way we will be able to get better battery life while still retaining the software compatibility. This research is an effort to optimize performance, compatibility, and battery life by utilizing a multi-kernel approach while using existing battery technology. 
 
 In this project, the idea is to research if we fit two operating systems for both cores of multi-core processors individually and how they perform.
 
@@ -97,8 +98,9 @@ In this paper we will explore if we can use this multikernel method on the batte
 % ############################################################################
 % Bibliography
 % ############################################################################
-\bibliographystyle{ACM-Reference-Format} 
-\bibliography{my-bibliography.bib}     %loads my-bibliography.bib
+\bibliographystyle{unsrt}
+
+\bibliography{my-bibliography}     %loads my-bibliography.bib
 
 % ============================================================================
 \end{document}
