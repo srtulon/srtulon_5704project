@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.21)  23 NOV 2021 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.21)  30 NOV 2021 11:10
 entering extended mode
 **./Final_Paper.tex
 (Final_Paper.tex
@@ -66,8 +66,11 @@ tex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count198
 \l__pdf_internal_box=\box50
+) (Final_Paper.aux
+
+LaTeX Warning: Label `fig2' multiply defined.
+
 )
-No file Final_Paper.aux.
 \openout1 = `Final_Paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -121,70 +124,39 @@ LaTeX Font Info:    Trying to load font information for U+lasy on input line 71
  (C:\Users\srtul\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-
-LaTeX Warning: Reference `litrev' on page 1 undefined on input line 88.
-
-
-LaTeX Warning: Reference `concl' on page 1 undefined on input line 90.
-
-
-LaTeX Warning: Citation `DEL07' on page 1 undefined on input line 98.
-
-
-LaTeX Warning: Citation `PD07' on page 1 undefined on input line 98.
-
-
-LaTeX Warning: Citation `DER07' on page 1 undefined on input line 98.
-
-
-LaTeX Warning: Citation `LDR07' on page 1 undefined on input line 98.
-
-
-LaTeX Warning: Citation `DLX06' on page 1 undefined on input line 99.
-
-
-LaTeX Warning: Citation `CDE06' on page 1 undefined on input line 99.
-
-
-LaTeX Warning: Citation `DFL06' on page 1 undefined on input line 99.
-
-
-LaTeX Warning: Reference `fig2' on page 1 undefined on input line 122.
-
-<Figures/figure-2.pdf, id=1, 441.65pt x 220.825pt>
-File: Figures/figure-2.pdf Graphic file (type pdf)
-<use Figures/figure-2.pdf>
-Package pdftex.def Info: Figures/figure-2.pdf  used on input line 125.
-(pdftex.def)             Requested size: 289.07999pt x 144.5454pt.
 [1
 
 {C:/Users/srtul/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-
-LaTeX Warning: Reference `fig1' on page 2 undefined on input line 134.
-
-<Figures/figure-1.pdf, id=12, 361.35pt x 252.945pt>
+<Figures/figure.png, id=11, 1282.7925pt x 620.3175pt>
+File: Figures/figure.png Graphic file (type png)
+<use Figures/figure.png>
+Package pdftex.def Info: Figures/figure.png  used on input line 98.
+(pdftex.def)             Requested size: 289.07999pt x 139.78311pt.
+ [2 <./Figures/figure.png>]
+<Figures/figure-2.pdf, id=17, 441.65pt x 220.825pt>
+File: Figures/figure-2.pdf Graphic file (type pdf)
+<use Figures/figure-2.pdf>
+Package pdftex.def Info: Figures/figure-2.pdf  used on input line 121.
+(pdftex.def)             Requested size: 289.07999pt x 144.5454pt.
+<Figures/figure-1.pdf, id=18, 361.35pt x 252.945pt>
 File: Figures/figure-1.pdf Graphic file (type pdf)
 <use Figures/figure-1.pdf>
-Package pdftex.def Info: Figures/figure-1.pdf  used on input line 139.
+Package pdftex.def Info: Figures/figure-1.pdf  used on input line 135.
 (pdftex.def)             Requested size: 289.07999pt x 202.35626pt.
-[2 <./Figures/figure-2.pdf>]
-No file Final_Paper.bbl.
-[3 <./Figures/figure-1.pdf>] (Final_Paper.aux)
+ [3 <./Figures/figure-2.pdf>] (Final_Paper.bbl [4 <./Figures/figure-1.pdf>]) [5
+] (Final_Paper.aux)
 
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 1341 strings out of 478927
- 20860 string characters out of 2852534
- 317711 words of memory out of 3000000
- 19224 multiletter control sequences out of 15000+600000
- 408997 words of font info for 47 fonts, out of 8000000 for 9000
+ 1358 strings out of 478927
+ 21159 string characters out of 2852534
+ 319823 words of memory out of 3000000
+ 19236 multiletter control sequences out of 15000+600000
+ 408689 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,66p,790b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,6n,66p,1523b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmbx10.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmbx12.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -193,9 +165,9 @@ ublic/amsfonts/cm/cmr10.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts
 eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/srtul/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/srtul/AppData/Lo
 cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Paper.pdf (3 pages, 132787 bytes).
+Output written on Final_Paper.pdf (5 pages, 381066 bytes).
 PDF statistics:
- 63 PDF objects out of 1000 (max. 8388607)
+ 72 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 11 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
