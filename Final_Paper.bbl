@@ -9,13 +9,6 @@ A.~Baumann, P.~Barham, PE. Dagand, T.~Harris, R.~Isaacs, S.~Peter, T.~Roscoe,
   Operating systems principles}, pages 29--44. Association for Computing
   Machinery, 2009.
 
-\bibitem{DEL05}
-R.~Brightwell, R.~Riesen, K.~Underwood, T.~B. Hudson, P.~Bridges, and A.~B.
-  Maccabe.
-\newblock A performance comparison of linux and a lightweight kernel.
-\newblock In {\em IEEE International Conference on Cluster Computing
-  (CLUSTER’03)}, pages 251-- 258. IEEE Computer Society, 2004.
-
 \bibitem{DEL01}
 B.~Gerofi, R.~Riesen, M.~Takagi, T.~Boku, K.~Nakajima, Y.~Ishikawa, and R.~W.
   Wisniewski.
@@ -32,12 +25,11 @@ B.~Gerofi, A.~Santogidis, D.~Martinet, and Y.~Ishikawa.
   Distributed Computing (HPDC '18)}, pages 2--13. Association for Computing
   Machinery, 2018.
 
-\bibitem{DEL06}
-J.~Ouyang, B.~Kocoloski, J.~Lange, and K.~Pedretti.
-\newblock Achieving performance isolation with lightweight co-kernels.
-\newblock In {\em 24th International Symposium on High-Performance Parallel and
-  Distributed Computing}, pages 149--160. Association for Computing Machinery,
-  2015.
+\bibitem{DEL11}
+G.~Longree.
+\newblock unikernels.
+\newblock {\em GitHub repository}, 2018, available at
+  https://github.com/cetic/unikernels.
 
 \bibitem{DEL04}
 R.Riesen, A.~Barney Maccabe, B.~Gerofi, DN. Lombard, JJ. Lange, K.~Pedretti,

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.21)  30 NOV 2021 11:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.21)  5 DEC 2021 16:23
 entering extended mode
 **./Final_Paper.tex
 (Final_Paper.tex
@@ -30,11 +30,10 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 \c@definition=\count190
 \c@theorem=\count191
 \c@lemma=\count192
-\c@corollary=\count193
-\c@property=\count194
-\c@observation=\count195
-\c@fact=\count196
-\c@algX=\count197
+\c@property=\count193
+\c@observation=\count194
+\c@fact=\count195
+\c@algX=\count196
 
 (C:\Users\srtul\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
 Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
@@ -64,43 +63,39 @@ File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 (C:\Users\srtul\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count198
+\l__color_backend_stack_int=\count197
 \l__pdf_internal_box=\box50
-) (Final_Paper.aux
-
-LaTeX Warning: Label `fig2' multiply defined.
-
-)
+) (Final_Paper.aux)
 \openout1 = `Final_Paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
-LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 (C:\Users\srtul\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count199
+\scratchcounter=\count198
 \scratchdimen=\dimen141
 \scratchbox=\box51
-\nofMPsegments=\count266
-\nofMParguments=\count267
+\nofMPsegments=\count199
+\nofMParguments=\count266
 \everyMPshowfont=\toks17
-\MPscratchCnt=\count268
+\MPscratchCnt=\count267
 \MPscratchDim=\dimen142
-\MPnumerator=\count269
-\makeMPintoPDFobject=\count270
+\MPnumerator=\count268
+\makeMPintoPDFobject=\count269
 \everyMPtoPDFconversion=\toks18
 )
 (C:\Users\srtul\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
@@ -114,60 +109,84 @@ fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 71.
+(Font)              <12> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 71.
+(Font)              <8> on input line 69.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 71.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 71
+(Font)              <6> on input line 69.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 69
 .
  (C:\Users\srtul\AppData\Local\Programs\MiKTeX\tex/latex/base\ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
+Overfull \hbox (1.6025pt too wide) in paragraph at lines 82--83
+\OT1/cmr/m/n/10.95 battery-powered. The cur-rent bat-tery tech-nol-ogy is the m
+ost sig-nif-i-cant hand-i-cap of portable
+ []
+
 [1
 
 {C:/Users/srtul/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
-<Figures/figure.png, id=11, 1282.7925pt x 620.3175pt>
+Underfull \hbox (badness 10000) in paragraph at lines 93--94
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 97.
+<Figures/figure.png, id=11, 618.05907pt x 374.90062pt>
 File: Figures/figure.png Graphic file (type png)
 <use Figures/figure.png>
-Package pdftex.def Info: Figures/figure.png  used on input line 98.
+Package pdftex.def Info: Figures/figure.png  used on input line 116.
+(pdftex.def)             Requested size: 289.07999pt x 175.35667pt.
+[2 <./Figures/figure.png>]
+<Figures/figure2.png, id=17, 1282.7925pt x 620.3175pt>
+File: Figures/figure2.png Graphic file (type png)
+<use Figures/figure2.png>
+Package pdftex.def Info: Figures/figure2.png  used on input line 128.
 (pdftex.def)             Requested size: 289.07999pt x 139.78311pt.
- [2 <./Figures/figure.png>]
-<Figures/figure-2.pdf, id=17, 441.65pt x 220.825pt>
+ [3 <./Figures/figure2.png>]
+<Figures/figure-2.pdf, id=22, 441.65pt x 220.825pt>
 File: Figures/figure-2.pdf Graphic file (type pdf)
 <use Figures/figure-2.pdf>
-Package pdftex.def Info: Figures/figure-2.pdf  used on input line 121.
+Package pdftex.def Info: Figures/figure-2.pdf  used on input line 151.
 (pdftex.def)             Requested size: 289.07999pt x 144.5454pt.
-<Figures/figure-1.pdf, id=18, 361.35pt x 252.945pt>
+
+Overfull \hbox (24.12344pt too wide) in paragraph at lines 163--177
+[][] 
+ []
+
+<Figures/figure-1.pdf, id=23, 361.35pt x 252.945pt>
 File: Figures/figure-1.pdf Graphic file (type pdf)
 <use Figures/figure-1.pdf>
-Package pdftex.def Info: Figures/figure-1.pdf  used on input line 135.
+Package pdftex.def Info: Figures/figure-1.pdf  used on input line 188.
 (pdftex.def)             Requested size: 289.07999pt x 202.35626pt.
- [3 <./Figures/figure-2.pdf>] (Final_Paper.bbl [4 <./Figures/figure-1.pdf>]) [5
-] (Final_Paper.aux)
+[4 <./Figures/figure-2.pdf>] (Final_Paper.bbl [5 <./Figures/figure-1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 29--33
+[]\OT1/cmr/m/n/10.95 G. Lon-gree.  uniker-nels.  \OT1/cmr/m/it/10.95 GitHub rep
+os-i-tory\OT1/cmr/m/n/10.95 , 2018, avail-able at
+ []
 
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+) [6] (Final_Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 1358 strings out of 478927
- 21159 string characters out of 2852534
- 319823 words of memory out of 3000000
- 19236 multiletter control sequences out of 15000+600000
- 408689 words of font info for 46 fonts, out of 8000000 for 9000
+ 1367 strings out of 478927
+ 21356 string characters out of 2852534
+ 318759 words of memory out of 3000000
+ 19244 multiletter control sequences out of 15000+600000
+ 409718 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,6n,66p,1523b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
-cmbx10.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmbx12.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts
-/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/srtul/AppData/Local/Programs/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/srtul/AppData/Local/Progr
-ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/srtul/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Final_Paper.pdf (5 pages, 381066 bytes).
+ 57i,8n,66p,1526b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmbx10.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX
+/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/srtul/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/srtul/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/srtul/AppD
+ata/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/sr
+tul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti1
+2.pfb>
+Output written on Final_Paper.pdf (6 pages, 448099 bytes).
 PDF statistics:
- 72 PDF objects out of 1000 (max. 8388607)
+ 77 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

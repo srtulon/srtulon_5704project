@@ -1,4 +1,3 @@
-
 % ===========================================================================
 % Title:
 % ---------------------------------------------------------------------------
@@ -13,7 +12,6 @@
 \newtheorem{definition}{Definition}
 \newtheorem{theorem}{Theorem}
 \newtheorem{lemma}{Lemma}
-\newtheorem{corollary}{Corollary}
 \newtheorem{property}{Property}
 \newtheorem{observation}{Observation}
 \newtheorem{fact}{Fact}
@@ -61,8 +59,8 @@
 % ############################################################################
 Sadid Rafsun Tulon\\
 School of Computer Science\\
-Carleton University\\
-Ottawa, Canada K1S 5B6\\
+University of Ottawa\\
+Ottawa, Canada\\
 {\em stulo080@uottawa.ca}
 % ############################################################################
 } % end-authors
@@ -74,30 +72,62 @@ Ottawa, Canada K1S 5B6\\
 % Abstract
 % ############################################################################
 \begin{abstract}
-A very concise summary of the problem addressed and solution presented in this paper.
+Improving the performance and battery life of smart devices is modern technology's most vital goal. As lowing transistor size becomes increasingly complex and battery technology has plateaued, other methods to increase performance and decrease power consumption are being explored relentlessly. While there are many techniques available, this paper addresses how to improve the performance and battery life of modern battery-powered smart devices using a new multi-kernel system technique. The main goal of this paper is to examine the potential of multi-kernel systems and compare them against Linux systems.
 \end{abstract}
 
 % ############################################################################
 \section{Introduction} \label{intro}
 % ############################################################################
 
-Smart devices have become an integral part of our life. Many of the smart devices are battery-powered. The current battery technology is the biggest handicap of portable smart devices right now. As CPUs and system on a chip(SoC)’s are improving their efficiency, things are getting better. However, modern software also demands more processing power which drains the battery faster. The lightweight kernels can extend battery life much further, but their software compatibility is far from ideal. Now that battery technology reached a plateau and transistors in the semiconductors are also close to reaching their size limit, we are in need of an alternate way of achieving better battery life without compromising performance and compatibility. A new approach using multiple operating system (OS) kernels can help to mitigate this problem. Almost all modern chips are multi-core. We can use these multi-core chips to run multiple OS kernels at the same time. Ideally one of the kernels is a lightweight kernel for better performance and battery life, and a monolithic kernel for better compatibility. The system can switch between the kernels, run them simultaneously, or stop them from running depending on the need. This way we will be able to get better battery life while still retaining the software compatibility. This research is an effort to optimize performance, compatibility, and battery life by utilizing a multi-kernel approach while using existing battery technology. 
+Smart devices have become an integral part of our life. Many of the smart devices are battery-powered. The current battery technology is the most significant handicap of portable smart devices right now. As CPUs and systems on a chip(SoC) improve their efficiency, things are getting better. However, modern software also demands more processing power, which faster drains the battery. The lightweight kernels can extend battery life much further, but their software compatibility is far from ideal. Now that battery technology has reached a plateau and transistors in the semiconductors are also close to reaching their size limit, we are in need of an alternate way of achieving better battery life without compromising performance and compatibility. A new approach using multiple operating system (OS) kernels can help mitigate this problem. Almost all modern chips are multi-core. We can use these multi-core chips to run multiple OS kernels at the same time. Ideally, one of the kernels is a lightweight kernel for better performance and battery life and a monolithic kernel for better compatibility. The system can switch between the kernels, run them simultaneously, or stop them from running depending on the need. This way, we will be able to get better battery life while still retaining the software compatibility. This research is an effort to optimize performance, compatibility, and battery life by utilizing a multi-kernel approach while using existing battery technology. 
 
 In this project, the idea is to research if we fit two operating systems for both cores of multi-core processors individually and how they perform.
-
 
 % ############################################################################
 \section{Literature Review} \label{litrev}
 % ############################################################################
-The current hardware technology is changing rapidly. The software is struggling to keep up with  this rapid change . Thus it has become very challenging to optimize software for a specific hardware\cite{DEL02} . So we need a new OS structure which can be as scalabe as needed. Most modern system use multicore processor. We can leverage this to our advantage.
 
-Light Weight Kernels (LWKs) are not new. They are here for at least 30 years \cite{DEL04}. But they are only gaining popularity in these past couple of years because of High-Performance Computing (HPC). HPC requires extreme scalability which the complex Full-Weight Kernel (FWKs) are very slow in adapting. LWKs work extremely well with highly scalable systems as they have a simple codebase. Moreover, they have better performance and efficiency than FWKs. However, LWKs only devices would have extremely limited functionality as they have limited compatibility with the standard  APIs \cite{DEL03}, \cite{DEL01} . Another major issue of LWKs are driver support. As LWKs have simple codebase mainly focusing on perfromance, they are missing many advance features that FWKs have. \cite{DEL03} In order to achive more performance and efficiency out of the system without sacrificing software and hardware compatibility, multikernel operating systems have been proposed. Multikernel OS runs both FWK and LWK side by side divides their tasks.[performance and scalabily] The LWK usually responsible for  the high performance tasks and FWK is there for ensuring compatibility, driver support and also as a backup system.\cite{DEL03}. This system works fairly well in high performance super computers. 
+\subsection{Different types of kernels}
+The current hardware technology is changing rapidly. The software is struggling to keep up with this rapid change. Thus it has become very challenging to optimize software for a specific hardware\cite{DEL02}. So we need a new OS structure that can be as scalable as needed. This is where LWKs and unikernels come in handy. Multi-core processors are used in the majority of current systems. We can leverage this to our advantage.
+
+Light Weight Kernels (LWKs) are not a new concept. They have been here for at least 30 years \cite{DEL04}. However, they are only gaining popularity in these past couple of years because of High-Performance Computing (HPC). HPC necessitates tremendous scalability, which the Full-Weight Kernel (FWKs) take a long time to adjust to. LWKs work exceptionally well with highly scalable systems as they have a simple codebase.Table \ref{table:1} describes the Design goals of LWKs and FWKs\\
+
+
+\begin{table}
+\begin{tabular}{ c c c }
+\hline
+ Design goal & LWK & FWK \\ [0.5ex] 
+\hline
+ Target & massively parallel systems & laptops, desktops, servers \\ 
+ Support & scalable applications & everything under the sun \\  
+ Dev. environment for & parallel applications & business, games, commerce, etc. \\
+ Emphasis & effciency & functionality  \\ 
+ Resources & maximize use & fair sharing, QoS  \\
+ Time to completion & minimal & when needed  \\
+\end{tabular}
+\caption{Design goals of LWKs and FWKs \cite{DEL04}}
+\label{table:1}
+\end{table}
+
+There is also a new type of single address space operating system called unikernels. They are minimalistic single-purpose operating systems made from library os [unikernel]. As they are very specialized, it is easy to optimize them for hardware. Like LWKs, unikernels are also very lightweight, sometimes unikernels are lighter than LWKs [azealea..........................]. 
+
+Figure~\ref{fig1} shows application stack on monolithic OS vs Unikernel.
+
+\includeFig{fig1}{Figures/figure.png}{Application stack on monolithic OS vs Unikernel \cite{DEL11}}
+
+
+
+In this paper, we will be treating both unikernal and LWK as the sub kernel as they both have better performance and efficiency than FWKs and have limited compatibility with the standard  APIs \cite{DEL03}, \cite{DEL01}. Another major issue of LWKs and unikernels are driver support. As they have a simple codebase mainly focusing on performance, they are missing many advanced features that FWKs have \cite{DEL03} [unikernel].
+
+
+\subsection{Multi-Kernel systems}
+Multi-kernel operating systems have been presented as a way to improve system performance and efficiency without sacrificing software and hardware compatibility. Multikernel OS runs both FWK and sub kernel side by side divides their tasks \cite{DEL01}. The sub kernel is usually responsible for the high-performance tasks, and FWK is there for ensuring compatibility, driver support and serves as a backup system \cite{DEL03}. In high-performance supercomputers, this system performs admirably. 
 
 Figure~\ref{fig2} shows the system architecture of a multikernel system.
 
-\includeFig{fig2}{Figures/figure.png}{System Architectural Overview \cite{DEL04}\cite{DEL05}\cite{DEL06}}
+\includeFig{fig2}{Figures/figure2.png}{System Architectural Overview of Multi-kernel \cite{DEL04}}
 
-In this paper we will explore if we can use this multikernel method on the battery powered smart devices. We will compare performance and power efficiency between single linux kernel system and multikernel system. As batteries have very small capacity, ensuring longer battery life is the most import part of this project. Thus power efficiency will be one of the main focus of this research project.
+This paper will explore if we can use this multi-kernel method on battery-powered smart devices. We will compare performance and power efficiency between a single Linux kernel system and a multi-kernel system. As batteries have a very small capacity, ensuring longer battery life while maintaining consistent performance is crucial for this project. Thus performance and power efficiency will be the main focuses of this research project.
 
 % ############################################################################
 \section{Problem Statement} \label{problemStatement}
@@ -115,10 +145,10 @@ In this paper we will explore if we can use this multikernel method on the batte
 
 This part of the paper is much more free-form. It may have one or several sections and subsections. But it all has only one purpose: to convince the reader that you answered the question or solved the problem that you set for yourself. In this section you will for example present new algorithms you developed and your implementation of these new algorithms.
 
- Figure~\ref{fig2} is an example
+ Figure~\ref{fig3} is an example
 of a drawing created with {\em mdraw} or {\em epsfig}.
 
-\includeFig{fig2}{Figures/figure-2}{XYZ and Hilbert Packings}
+\includeFig{fig3}{Figures/figure-2}{XYZ and Hilbert Packings}
 % usage: \includeFig{label}{file}{caption}
 
 % ############################################################################
@@ -127,11 +157,34 @@ of a drawing created with {\em mdraw} or {\em epsfig}.
 
 This section is not mandatory for all papers (for example theory papers) but typically required for papers in the field of parallel computing. After all, parallel computing is all about compute performance. Here you present performance data obtained from e.g. running your newly developed algorithms and code on a parallel machine using some benchmark input data. Typically, you need to describe the parallel machine you used and the data that you used as input. The main results are usually performance graphs, typically speedup curves. You want to evaluate your code on different input data sets highlighting the strengths and weaknesses of your code. Don’t just use best case scenarios. People will call you on that. Discuss the results obtained.
 
- Figure~\ref{fig1} is a
+
+
+\begin{table}
+\begin{tabular}{ c c c c }
+\hline
+ Kernel & Main Linux OS & Status & Result \\ [0.5ex] 
+\hline
+ Azalea & CentOs & Failed to install & Fail\\
+ 
+ Hermitcore & Ubuntu & Failed to compile on machine  & Fail \\ 
+ mckernel & CentOs & Failed to compile on machine & Fail \\ 
+ MirageOs & Ubuntu & Successfully compiled on machine but failed & Partial Success \\ 
+  &  & to boot anything other than helloworld &  \\ 
+ Unikraft & Ubuntu & Successfully compiled and ran flask server & Success\\
+ 
+ 
+\end{tabular}
+\caption{Experiment}
+\label{table:2}
+\end{table}
+
+
+
+ Figure~\ref{fig4} is a
 typical example of an experimental evaluation result. Such graphs
 are ususally created with GnuPlot.
 
-\includeFig{fig1}{Figures/figure-1}{Measured Running Times
+\includeFig{fig4}{Figures/figure-1}{Measured Running Times
 Of Some Unknown Algorithm Implementation}
 % usage: \includeFig{label}{file}{caption}
 
