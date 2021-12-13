@@ -34,6 +34,10 @@
                                  %        \end{algorithm}
 %--------------- Figures ----------------------------------------------------
 \usepackage{graphicx}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
 
 \newcommand{\includeFig}[3]      {\begin{figure}[htb] \begin{center}
                                  \includegraphics
@@ -155,40 +159,41 @@ of a drawing created with {\em mdraw} or {\em epsfig}.
 \section{Experimental Evaluation} \label{expEval}
 % ############################################################################
 
-This section is not mandatory for all papers (for example theory papers) but typically required for papers in the field of parallel computing. After all, parallel computing is all about compute performance. Here you present performance data obtained from e.g. running your newly developed algorithms and code on a parallel machine using some benchmark input data. Typically, you need to describe the parallel machine you used and the data that you used as input. The main results are usually performance graphs, typically speedup curves. You want to evaluate your code on different input data sets highlighting the strengths and weaknesses of your code. Don’t just use best case scenarios. People will call you on that. Discuss the results obtained.
+The following experiments are done with a machine using Intel core I5 4500H 4 core CPU  clocked at 2.50 GHz, 8 gigabytes of ram. Primary operating systems were Ubuntu and CentOs depending on the situation. We tried to compile and test various open-source LWKs and Unikernels such as Azalea, HermitCore, mckernel, MirageOs, Unikraft. 
+Table \ref{table:2}  describes the summery of each experiment.
 
 
 
-\begin{table}
-\begin{tabular}{ c c c c }
-\hline
- Kernel & Main Linux OS & Status & Result \\ [0.5ex] 
-\hline
- Azalea & CentOs & Failed to install & Fail\\
- 
- Hermitcore & Ubuntu & Failed to compile on machine  & Fail \\ 
- mckernel & CentOs & Failed to compile on machine & Fail \\ 
- MirageOs & Ubuntu & Successfully compiled on machine but failed & Partial Success \\ 
-  &  & to boot anything other than helloworld &  \\ 
- Unikraft & Ubuntu & Successfully compiled and ran flask server & Success\\
- 
- 
-\end{tabular}
-\caption{Experiment}
-\label{table:2}
-\end{table}
+From Table \ref{table:2}, we can see that only Unikraft fully worked on our system. The rest of the kernels refused to compile or run. 
+
+We also tried to compile and test the kernels mentioned above on the Raspberry pi 4 4 gigabyte model. Only helloworld module of Unikraft ran properly.  
+
+Figure~\ref{fig4} is the bootscreen of Unikraft running Flask server.
+
+\includeFig{fig4}{Figures/unikraftboot.png}{Bootscreen of Unikraft running Flask server}
 
 
 
- Figure~\ref{fig4} is a
-typical example of an experimental evaluation result. Such graphs
-are ususally created with GnuPlot.
-
-\includeFig{fig4}{Figures/figure-1}{Measured Running Times
-Of Some Unknown Algorithm Implementation}
-% usage: \includeFig{label}{file}{caption}
 
 
+
+We suspect such a situation occurred because these kernels are built for server CPUs such as Intel Xeon, AMD Epyc, and Fujitsu A64FX. Almost all of the LWKs and unikernels and specialized for servers, so it is understandable that consumer-grade CPUs are incompatible with them. 
+
+
+Figure~\ref{fig5} is comparison of power consumption between Unikraft Flask server and Linux native Flask server without including whole Linux power consumption. 
+
+\includeFig{fig5}{Figures/wolinux.jpg}{Unikraft Flask server vs Linux native Flask server (without OS) power consumption}
+
+Figure~\ref{fig6} is comparison of power consumption between Unikraft Flask server and Linux native Flask server without including whole Linux power consumption.
+
+\includeFig{fig6}{Figures/wlinux.jpg}{Unikraft Flask server vs Linux native Flask server (with OS) power consumption}
+
+	
+
+
+
+
+\clearpage
 
 % ############################################################################
 \section{Conclusions} \label{concl}
