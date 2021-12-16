@@ -144,7 +144,7 @@ This paper will explore if we can use this multi-kernel method on battery-powere
 \end{enumerate}
 
 % ############################################################################
-\section{Proposed Solution: ...} \label{proposedSolution}
+\section{Proposed Solution} \label{proposedSolution}
 % ############################################################################
 
 This part of the paper is much more free-form. It may have one or several sections and subsections. But it all has only one purpose: to convince the reader that you answered the question or solved the problem that you set for yourself. In this section you will for example present new algorithms you developed and your implementation of these new algorithms.
@@ -162,6 +162,29 @@ of a drawing created with {\em mdraw} or {\em epsfig}.
 The following experiments are done with a machine using Intel core I5 4500H 4 core CPU  clocked at 2.50 GHz, 8 gigabytes of ram. Primary operating systems were Ubuntu and CentOs depending on the situation. We tried to compile and test various open-source LWKs and Unikernels such as Azalea, HermitCore, mckernel, MirageOs, Unikraft. 
 Table \ref{table:2}  describes the summery of each experiment.
 
+
+-\begin{table}
+\begin{tabular}{ c c c c c }
+\hline
+ Kernel & Main Linux OS & Architecture & Status & Result \\ [0.5ex] 
+\hline
+ Azalea & CentOs & x86 & Failed to install & Fail\\
+ 
+ Hermitcore & Ubuntu & x86 & Failed to compile on machine  & Fail \\ 
+ mckernel & CentOs & x86 & Failed to compile on machine & Fail \\ 
+ mckernel & CentOs & arm64 & Failed to compile on machine & Fail \\ 
+ MirageOs & Ubuntu & x86 & Successfully compiled on machine but failed & Partial Success \\ 
+  &  & & to boot anything other than helloworld &  \\ 
+ MirageOs & RaspbianOS & arm64 & Failed to compile on machine & Fail \\ 
+ Unikraft & Ubuntu & x86 & Successfully compiled and ran flask server & Success\\
+ Unikraft & RaspbianOS & arm64 & Successfully compiled on machine but failed & Partial Success \\ 
+  &  & & to boot anything other than helloworld &  \\
+ 
+ 
+\end{tabular}
+\caption{Experiment}
+\label{table:2}
+\end{table}
 
 
 From Table \ref{table:2}, we can see that only Unikraft fully worked on our system. The rest of the kernels refused to compile or run. 
