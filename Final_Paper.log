@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.21)  15 DEC 2021 21:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.11.21)  18 DEC 2021 20:22
 entering extended mode
 **./Final_Paper.tex
 (Final_Paper.tex
@@ -156,6 +156,11 @@ Overfull \hbox (1.6025pt too wide) in paragraph at lines 86--87
 ost sig-nif-i-cant hand-i-cap of portable
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
+
+ []
+
 [1
 
 {C:/Users/srtul/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
@@ -170,69 +175,60 @@ File: Figures/figure.png Graphic file (type png)
 <use Figures/figure.png>
 Package pdftex.def Info: Figures/figure.png  used on input line 120.
 (pdftex.def)             Requested size: 289.07999pt x 175.35667pt.
-[2 <./Figures/figure.png>]
-<Figures/figure2.png, id=17, 1282.7925pt x 620.3175pt>
+<Figures/figure2.png, id=13, 1282.7925pt x 620.3175pt>
 File: Figures/figure2.png Graphic file (type png)
 <use Figures/figure2.png>
 Package pdftex.def Info: Figures/figure2.png  used on input line 132.
 (pdftex.def)             Requested size: 289.07999pt x 139.78311pt.
- [3 <./Figures/figure2.png>]
-<Figures/figure-2.pdf, id=22, 441.65pt x 220.825pt>
-File: Figures/figure-2.pdf Graphic file (type pdf)
-<use Figures/figure-2.pdf>
-Package pdftex.def Info: Figures/figure-2.pdf  used on input line 155.
-(pdftex.def)             Requested size: 289.07999pt x 144.5454pt.
-
-Overfull \hbox (95.80103pt too wide) in paragraph at lines 167--185
-[][] 
- []
-
-<Figures/unikraftboot.png, id=23, 893.13675pt x 472.76625pt>
+[2] [3 <./Figures/figure.png> <./Figures/figure2.png>]
+<Figures/unikraftboot.png, id=22, 893.13675pt x 472.76625pt>
 File: Figures/unikraftboot.png Graphic file (type png)
 <use Figures/unikraftboot.png>
-Package pdftex.def Info: Figures/unikraftboot.png  used on input line 196.
+Package pdftex.def Info: Figures/unikraftboot.png  used on input line 155.
 (pdftex.def)             Requested size: 289.07999pt x 153.0196pt.
-[4 <./Figures/figure-2.pdf>]
-<Figures/wolinux.jpg, id=35, 824.32968pt x 606.01407pt>
+<Figures/wolinux.jpg, id=23, 824.32968pt x 606.01407pt>
 File: Figures/wolinux.jpg Graphic file (type jpg)
 <use Figures/wolinux.jpg>
-Package pdftex.def Info: Figures/wolinux.jpg  used on input line 208.
+Package pdftex.def Info: Figures/wolinux.jpg  used on input line 156.
 (pdftex.def)             Requested size: 289.07999pt x 212.51497pt.
-<Figures/wlinux.jpg, id=36, 824.32968pt x 606.01407pt>
+<Figures/wlinux.jpg, id=24, 824.32968pt x 606.01407pt>
 File: Figures/wlinux.jpg Graphic file (type jpg)
 <use Figures/wlinux.jpg>
-Package pdftex.def Info: Figures/wlinux.jpg  used on input line 212.
+Package pdftex.def Info: Figures/wlinux.jpg  used on input line 158.
 (pdftex.def)             Requested size: 289.07999pt x 212.51497pt.
- [5 <./Figures/unikraftboot.png> <./Figures/wolinux.jpg>] [6 <./Figures/wlinux.
-jpg>] (Final_Paper.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 29--33
+<Figures/12.png, id=25, 902.6222pt x 736.25063pt>
+File: Figures/12.png Graphic file (type png)
+<use Figures/12.png>
+Package pdftex.def Info: Figures/12.png  used on input line 163.
+(pdftex.def)             Requested size: 368.57964pt x 300.65141pt.
+ [4 <./Figures/unikraftboot.png> <./Figures/wolinux.jpg>] [5 <./Figures/wlinux.
+jpg>] [6 <./Figures/12.png>] (Final_Paper.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 44--48
 []\OT1/cmr/m/n/10.95 G. Lon-gree.  uniker-nels.  \OT1/cmr/m/it/10.95 GitHub rep
 os-i-tory\OT1/cmr/m/n/10.95 , 2018, avail-able at
  []
 
-) [7
-
-] (Final_Paper.aux) ) 
+[7]) [8] (Final_Paper.aux) ) 
 Here is how much of TeX's memory you used:
- 2750 strings out of 478927
- 47756 string characters out of 2852534
- 346827 words of memory out of 3000000
- 20612 multiletter control sequences out of 15000+600000
+ 2751 strings out of 478927
+ 47668 string characters out of 2852534
+ 347827 words of memory out of 3000000
+ 20613 multiletter control sequences out of 15000+600000
  409718 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,9n,66p,1526b,359s stack positions out of 5000i,500n,10000p,200000b,80000s
-<C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/
-public/amsfonts/cm/cmbx10.pfb><C:/Users/srtul/AppData/Local/Programs/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/srtul/AppData/Local/Programs/M
-iKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/srtul/AppData/Local/Pr
-ograms/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/srtul/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/srtul/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Use
-rs/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pf
-b>
-Output written on Final_Paper.pdf (7 pages, 599857 bytes).
+<C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/srtul/AppData/Local/Programs/MiK
+TeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/srtul/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/srtul/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/srtul/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
+/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+<C:/Users/srtul/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
+ti12.pfb>
+Output written on Final_Paper.pdf (8 pages, 768263 bytes).
 PDF statistics:
- 78 PDF objects out of 1000 (max. 8388607)
+ 75 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  31 words of extra memory for PDF output out of 10000 (max. 10000000)
 

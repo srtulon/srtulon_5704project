@@ -25,11 +25,34 @@ B.~Gerofi, A.~Santogidis, D.~Martinet, and Y.~Ishikawa.
   Distributed Computing (HPDC '18)}, pages 2--13. Association for Computing
   Machinery, 2018.
 
+\bibitem{DEL13}
+S.~H. Jeon, S.~J. Cha, Ramneek, Y.~J. Jeong, J.~M. Kim, and S.~Jung.
+\newblock Azalea-unikernel: Unikernel into multi-kernel operating system for
+  manycore systems.
+\newblock In {\em 2018 International Conference on Information and
+  Communication Technology Convergence (ICTC)}, pages 1096--1099, 2018.
+
+\bibitem{DEL14}
+S.~Kuenzer, V.~A. Badoiu, H.~Lefeuvre, S.~Santhanam, A.~Jung, G.~Gain,
+  C.~Soldani, C.~Lupu, S.~Teodorescu, C.~Raducanu, C.~Banu, L.~Mathy,
+  R.~Deaconescu, C.~Raiciu, and F.~Huici.
+\newblock Unikraft: fast, specialized unikernels the easy way.
+\newblock {\em Proceedings of the Sixteenth European Conference on Computer
+  Systems}, 2021.
+
 \bibitem{DEL11}
 G.~Longree.
 \newblock unikernels.
 \newblock {\em GitHub repository}, 2018, available at
   https://github.com/cetic/unikernels.
+
+\bibitem{DEL15}
+G.~E. Moore.
+\newblock Progress in digital integrated electronics [technical literaiture,
+  copyright 1975 ieee. reprinted, with permission. technical digest.
+  international electron devices meeting, ieee, 1975, pp. 11-13.].
+\newblock {\em IEEE Solid-State Circuits Society Newsletter}, 11(3):36--37,
+  2006.
 
 \bibitem{DEL04}
 R.Riesen, A.~Barney Maccabe, B.~Gerofi, DN. Lombard, JJ. Lange, K.~Pedretti,
