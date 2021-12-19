@@ -113,7 +113,7 @@ Light Weight Kernels (LWKs) are not a new concept. They have been here for at le
 \label{table:1}
 \end{table}
 
-There is also a new type of single address space operating system called unikernels. They are minimalistic single-purpose operating systems made from library os [unikernel]. As they are very specialized, it is easy to optimize them for hardware. Like LWKs, unikernels are also very lightweight, sometimes unikernels are lighter than LWKs \cite{DEL13}.. 
+There is also a new type of single address space operating system called unikernels. They are minimalistic single-purpose operating systems made from library os [unikernel]. As they are very specialized, it is easy to optimize them for hardware. Like LWKs, unikernels are also very lightweight, sometimes unikernels are lighter than LWKs \cite{DEL13}. Moreover, like LWKs they are also extremely resource efficient \cite{DEL16}.
 
 Figure~\ref{fig1} shows application stack on monolithic OS vs Unikernel.
 
@@ -206,7 +206,7 @@ From Table \ref{table:2}, we can see that only Unikraft fully worked on our syst
 We also tried to compile and test the kernels mentioned above on the Raspberry pi 4 4 gigabyte model. Only helloworld module of Unikraft ran properly.  
 
 
-We suspect such a situation occurred because these kernels are built for server CPUs such as Intel Xeon, AMD Epyc, and Fujitsu A64FX [..................]. Almost all of the LWKs and unikernels and specialized for servers, so it is understandable that consumer-grade CPUs are incompatible with them. So in the end, we were not able to fully implement multikernel system. While we were able to boot unikraft it was not true multikernel system as unikraft was running on kvm.
+We suspect such a situation occurred because these kernels are built for server CPUs such as Intel Xeon and Fujitsu A64FX \cite{DEL01} \cite{DEL02} \cite{DEL04}. Almost all of the LWKs and unikernels and specialized for servers, so it is understandable that consumer-grade CPUs are incompatible with them. So in the end, we were not able to fully implement multikernel system. While we were able to boot unikraft it was not true multikernel system as unikraft was running on kvm.
 
 
 As only Unikrft ran properly on our main system, we will mainly focus on Unikraft. We have been able to run flask server on Unikraft. While testing, the boot time of unikraft was found 3 seconds on average. Unikraft flask server consumes 60 milliwatt on average. On the other hand native linux flask server process consumes 20 milliwatt on average. But if we also include Linux power consumption, total power consumption will be 8000 milliwatt on average on freshly booted system.
@@ -231,7 +231,7 @@ Unfortunately, due to lack of proper hardware, we were unable to verify the full
 \subsection{Conclusions} 
 In conclusion, multikernel system is a promising concept but needs more support. Currently, some kernels such as Unikraft, Include os, mirage os are receiving decent support but there are still room for improvement. As the support for these kernels gets better, they should also be more available to wider range of systems.
 \subsection{Summary of Contributions}
-In this paper, we tried to explore if the multikernel system is viable alternative method to improve performance and battery life. We tried to test several mainstream sub kernels on consumer level hardware such as generic laptop and raspberry pi. We also measured boot time and power consumption on Unikraft.
+In this paper, we tried to explore if the multikernel system is viable alternative method to improve performance and battery life. We tried to test several mainstream sub kernels on consumer level hardware such as generic laptop and raspberry pi. We also measured boot time and power consumption on Unikraft. But we could not boot anything meaningful on raspberry pi. As our main target system for the project is battery powered devices, arm powered raspberry pi should have been the main target system. Unfortunately, due to lack of support, raspberry pi was not able to boot anything that can be measured properly.
 \subsection{Future Work}
 Future work includes making multikernel system more available. To do that we need to make existing kernels work with more devices or create a new configurable kernel from ground up with large array of hardware support in mind.
 
