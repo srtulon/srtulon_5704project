@@ -17,6 +17,7 @@
 \newtheorem{fact}{Fact}
 \newenvironment{proof}           {\noindent{\bf Proof.} }%
                                  {\null\hfill$\Box$\par\medskip}
+\providecommand{\keywords}[1]{\textbf{Keywords:} #1}
 %--------------- Algorithm --------------------------------------------------
 \newtheorem{algX}{Algorithm}
 \newenvironment{algorithm}       {\begin{algX}\begin{em}}%
@@ -54,7 +55,7 @@
 % Title
 % ############################################################################
 
-\title{An Effective way to optimize performance and battery life of smart devices using multi-kernel approach}
+\title{An effective way to optimize performance and battery life of smart devices using multi-kernel approach}
 
 
 % ############################################################################
@@ -76,9 +77,10 @@ Ottawa, Canada\\
 % Abstract
 % ############################################################################
 \begin{abstract}
-Improving the performance and battery life of smart devices is modern technology's most vital goal. As lowing transistor size becomes increasingly complex and battery technology has plateaued, other methods to increase performance and decrease power consumption are being explored relentlessly. While there are many techniques available, this paper addresses how to improve the performance and battery life of modern battery-powered smart devices using a new multi-kernel system technique. The main goal of this paper is to examine the potential of multi-kernel systems and compare them against Linux systems.
+Enhancing the performance and battery life of smart devices is modern technology's most vital aspect. As reducing the transistor size becomes increasingly complex and battery technology has plateaued, other methods to increase performance and decrease power consumption are being explored relentlessly. While there are many techniques available, this paper focuses on how to improve the performance and battery life of modern battery-powered smart devices using a new multi-kernel system technique. The main goal of this paper is to examine the potential of multi-kernel systems and compare them against Linux systems.
 \end{abstract}
 
+\keywords{multicore processors, multi-kernel, unikernel, light weight-kernel }
 % ############################################################################
 \section{Introduction} \label{intro}
 % ############################################################################
@@ -92,7 +94,7 @@ In this project, the idea is to research if we fit two operating systems for bot
 % ############################################################################
 
 \subsection{Different types of kernels}
-The current hardware technology is changing rapidly. The software is struggling to keep up with this rapid change. Thus it has become very challenging to optimize software for a specific hardware\cite{DEL02}. So we need a new OS structure that can be as scalable as needed. This is where LWKs and unikernels come in handy. Multi-core processors are used in the majority of current systems. We can leverage this to our advantage.\\
+The current hardware technology is changing rapidly. But they are still limited by physical limitations. Performance mainly depends on data transfer speed and process time. But these are limited by electron flow rate\cite{DEL17}. As transistors are becoming smaller, the electron has to travel less. But shrinking transistor sizes are becoming more challenging. The size of silicon atom is .02 nanometre and we are reaching this limit \cite{DEL19}. So we need a new OS structure that would be more resource efficient without compromising compatibility. Multi-core processors are used in the majority of current systems. We can leverage this to our advantage.\\
 
 Light Weight Kernels (LWKs) are not a new concept. They have been here for at least 30 years \cite{DEL04}. However, they are only gaining popularity in these past couple of years because of High-Performance Computing (HPC). HPC necessitates tremendous scalability, which the Full-Weight Kernel (FWKs) take a long time to adjust to. LWKs work exceptionally well with highly scalable systems as they have a simple codebase.Table \ref{table:1} describes the Design goals of LWKs and FWKs\\
 
@@ -113,7 +115,7 @@ Light Weight Kernels (LWKs) are not a new concept. They have been here for at le
 \label{table:1}
 \end{table}
 
-There is also a new type of single address space operating system called unikernels. They are minimalistic single-purpose operating systems made from library os [unikernel]. As they are very specialized, it is easy to optimize them for hardware. Like LWKs, unikernels are also very lightweight, sometimes unikernels are lighter than LWKs \cite{DEL13}. Moreover, like LWKs they are also extremely resource efficient \cite{DEL16}.
+There is also a new type of single address space operating system called unikernels. They are minimalistic custom single-purpose operating systems made from library os that only contain the functionality required for specific operation \cite{DEL14} \cite{DEL13}. As they are very specialized, it is easy to optimize them for hardware. Unikernel uses library operating system. Like LWKs, unikernels are also very lightweight, sometimes unikernels are lighter than LWKs \cite{DEL13}. Moreover, like LWKs they are also extremely resource efficient \cite{DEL16}.
 
 Figure~\ref{fig1} shows application stack on monolithic OS vs Unikernel.
 
@@ -125,11 +127,13 @@ In this paper, we will be treating both unikernal and LWK as the sub kernel as t
 
 
 \subsection{Multi-Kernel systems}
-Multi-kernel operating systems have been presented as a way to improve system performance and efficiency without sacrificing software and hardware compatibility. Multikernel OS runs both FWK and sub kernel side by side divides their tasks \cite{DEL01}. The sub kernel is usually responsible for the high-performance tasks, and FWK is there for ensuring compatibility, driver support and serves as a backup system \cite{DEL03}. In high-performance supercomputers, this system performs admirably. 
+Multi-kernel operating systems have been presented as a way to improve system performance and efficiency without sacrificing software and hardware compatibility. Multikernel OS runs both FWK and sub kernel side by side divides their tasks \cite{DEL01}. The sub kernel is usually responsible for the high-performance tasks, and FWK is there for ensuring compatibility and driver support \cite{DEL03}. In high-performance supercomputers, this system performs admirably. The kernels communicate with each other using message-passing or shared-memory \cite{DEL02}. There are also different types of implementation 1) booting both kernel simultaneously when system starts and 2) booting the LWK after Linux \cite{DEL01}.  
 
 Figure~\ref{fig2} shows the system architecture of a multikernel system.
 
 \includeFig{fig2}{Figures/figure2.png}{System Architectural Overview of Multi-kernel \cite{DEL04}}
+
+Three general goals of Multikernel OS are 1)Achieve scalability of LWK, 2) Maintaining Linux compatibility and 3) Able to support Linux development so that the system do not fall behind.  Achieving all three goals are extremely hard as they conflict with each other \cite{DEL01}. Multikernel method tries to solve this conflict. As Linux is a mature operating system, now the goal is to build a LWK that plays well with Linux kernel and does not need heavy modification of Linux kernel. As mentioned previously, there are two types of implementation of multikernel. If both kernel boot simultaneously, Linux has to modified heavily making maintaining Linux kernel such as updating or fixing laborious. However, this performs better as the subkernel can access to more resources without depending on Linux. On the other hand, the second approach makes maintaining Linux easier but the subkernel has to request resource allocation from Linux which reduces performance\cite{DEL01}.
 
 This paper will explore if we can use this multi-kernel method on battery-powered smart devices. We will compare performance and power efficiency between a single Linux kernel system and a multi-kernel system. As batteries have a very small capacity, ensuring longer battery life while maintaining consistent performance is crucial for this project. Thus performance and power efficiency will be the main focuses of this research project.
 
@@ -153,9 +157,9 @@ Most of our modern chips are using multiple cores. Multi-kernel system is a new 
 % ############################################################################
 
 \includeFig{fig4}{Figures/unikraftboot.png}{Bootscreen of Unikraft running Flask server}
-\includeFig{fig5}{Figures/wolinux.jpg}{Unikraft Flask server vs Linux native Flask server (without OS) power consumption}
+\includeFig{fig5}{Figures/wolinux.jpg}{Unikraft Flask server vs Linux native Flask server (excluding OS) power consumption}
 
-\includeFig{fig6}{Figures/wlinux.jpg}{Unikraft Flask server vs Linux native Flask server (with OS) power consumption}
+\includeFig{fig6}{Figures/wlinux.jpg}{Unikraft vs Linux power consumption}
 
 
 \begin{figure}
@@ -167,7 +171,7 @@ Most of our modern chips are using multiple cores. Multi-kernel system is a new 
 
 
 
-The following experiments are done with a machine using Intel core I5 4500H 4 core CPU  clocked at 2.50 GHz, 8 gigabytes of ram. Primary operating systems were Ubuntu and CentOs depending on the situation. We tried to compile and test various open-source LWKs and Unikernels such as Azalea, HermitCore, mckernel, MirageOs, Unikraft. 
+The following experiments are done with a machine using Intel core I5 4500H 4 core CPU  clocked at 2.50 GHz, 8 gigabytes of ram. Primary operating systems were Ubuntu and CentOs depending on the situation. System was freshly installed with Linux operating systems before each attempt. We tried to compile and test various open-source LWKs and Unikernels such as Azalea, HermitCore, mckernel, MirageOs, Unikraft.
 Table \ref{table:2}  describes the summery of each experiment.
 
 
@@ -203,23 +207,28 @@ Table \ref{table:2}  describes the summery of each experiment.
 
 From Table \ref{table:2}, we can see that only Unikraft fully worked on our system. The rest of the kernels refused to compile or run. 
 
+The biggest challenge we faced while trying compile these kernel was lack of support. Most of the guides the very difficult to follow. Moreover, if any error occurred, it was extremely difficult to debug because of complex code struct and lack to supporting documents.  Furthermore, as our system was not officially supported, our failure rate was even high. We followed \cite{DEL22}, \cite{DEL23},\cite{DEL24}, \cite{DEL25}and \cite{DEL26}  to install  Azalea, HermitCore, mckernel, MirageOs, Unikraft respectively. Azalea, HermitCore and mckernel failed to compile on our system. MirageOs and Unikraft compiled successfully but we could only run helloworld example on MirageOs. 
+
+We followed "Python Flask on Unikraft" to install Unikraft Flask server \cite{DEL18}. As unikraft specifically supports python 3.7.4, we had to manually install that version using pyenv \cite{DEL27}. We could then boot Unikraft kernel using qemu kvm. We could not find any way to boot Unikraft natively on our system.
+
+
 We also tried to compile and test the kernels mentioned above on the Raspberry pi 4 4 gigabyte model. Only helloworld module of Unikraft ran properly.  
 
 
 We suspect such a situation occurred because these kernels are built for server CPUs such as Intel Xeon and Fujitsu A64FX \cite{DEL01} \cite{DEL02} \cite{DEL04}. Almost all of the LWKs and unikernels and specialized for servers, so it is understandable that consumer-grade CPUs are incompatible with them. So in the end, we were not able to fully implement multikernel system. While we were able to boot unikraft it was not true multikernel system as unikraft was running on kvm.
 
 
-As only Unikrft ran properly on our main system, we will mainly focus on Unikraft. We have been able to run flask server on Unikraft. While testing, the boot time of unikraft was found 3 seconds on average. Unikraft flask server consumes 60 milliwatt on average. On the other hand native linux flask server process consumes 20 milliwatt on average. But if we also include Linux power consumption, total power consumption will be 8000 milliwatt on average on freshly booted system.
+As only Unikrft ran properly on our main system, we will mainly focus on Unikraft. We have been able to run flask server on Unikraft. While testing, the boot time of unikraft was found 3 seconds on average. Unikraft flask server consumes 60 milliwatt on average. On the other hand native linux flask server process consumes 20 milliwatt on average. But if we also include Linux power consumption, total power consumption will be 8000 milliwatt on average on freshly booted system. For measuring power consumption, powerstat  \cite{DEL21} and PowerTOP \cite{DEL20} was used.
 
 Figure~\ref{fig4} is the bootscreen of Unikraft running Flask server.
 
 Figure~\ref{fig5} is comparison of power consumption between Unikraft Flask server and Linux native Flask server without including whole Linux power consumption. 
 
 
-Figure~\ref{fig6} is comparison of power consumption between Unikraft Flask server and Linux native Flask server without including whole Linux power consumption.
+Figure~\ref{fig6} is comparison of power consumption between Unikraft and Linux.
 
 
-Unfortunately, due to lack of proper hardware, we were unable to verify the full potential of of multikernel system. But this system still shows potential. Our experiment shows that this system uses less power if implemented properly. We have also seen from earlier research that this system also performs better in most cases \cite{DEL14}. 
+Unfortunately, due to lack of proper hardware, we were unable to verify the full potential of of multikernel system. But this system still shows potential. Our experiment shows that this system uses less power if implemented properly. We have also seen from earlier work in \cite{DEL14} that this system also performs better in most cases. 
 
 
 
@@ -229,11 +238,11 @@ Unfortunately, due to lack of proper hardware, we were unable to verify the full
 
 
 \subsection{Conclusions} 
-In conclusion, multikernel system is a promising concept but needs more support. Currently, some kernels such as Unikraft, Include os, mirage os are receiving decent support but there are still room for improvement. As the support for these kernels gets better, they should also be more available to wider range of systems.
+In conclusion, multikernel system is a promising concept but needs more support. Previous work in \cite{DEL01} shows that 9\% to 280\% performance improvement was achieved using multikernel. In our experiment we can see that Unikernel used 1/133 of power than Linux even while running on kvm. Though it was not running true multikernel system, we can theoretically reduce power consumption drastically if we can implement multikernel system properly. As this concept is relatively new, lot of work needs to done before this concept can mature. For now most of the multikernel projects are open-source test projects. These are far from being  stable. Currently, some kernels such as Unikraft, Include os, mirage os are receiving decent support but there are still room for improvement. As the support for these kernels gets better, they should also be more available to wider range of systems. 
 \subsection{Summary of Contributions}
 In this paper, we tried to explore if the multikernel system is viable alternative method to improve performance and battery life. We tried to test several mainstream sub kernels on consumer level hardware such as generic laptop and raspberry pi. We also measured boot time and power consumption on Unikraft. But we could not boot anything meaningful on raspberry pi. As our main target system for the project is battery powered devices, arm powered raspberry pi should have been the main target system. Unfortunately, due to lack of support, raspberry pi was not able to boot anything that can be measured properly.
 \subsection{Future Work}
-Future work includes making multikernel system more available. To do that we need to make existing kernels work with more devices or create a new configurable kernel from ground up with large array of hardware support in mind.
+Future work includes making multikernel system more available and make them stable. To do that we need to make existing kernels work with more devices or create a new configurable kernel from ground up with large array of hardware support in mind. Previous work in \cite{DEL02} talks about hardware neutral multikernel, but we have not found any thing that could be considered hardware neutral. Most kernels are intended for HPCs. Majority of the battery powered devices have low powered arm cpus in them. So for this project goal to be succeed, proper arm cpu support is necessary. As mentioned earlier, we also faced difficulty compiling some kernels on our system. In addition proper support documents would be beneficial for trying, testing and contributing to these projects. We faced lot of issues while trying various kernels and lack of proper guide  made it more challenging. 
 
 
 % ############################################################################

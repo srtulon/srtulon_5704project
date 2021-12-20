@@ -1,4 +1,16 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{DEL17}
+Computers are becoming faster and faster, but their speed is still limited by
+  the physical restrictions of an electron moving through matter. what
+  technologies are emerging to break through this speed barrier?, Oct 1999
+  available at
+  https://www.scientificamerican.com/article/computers-are-becoming-fa/.
+
+\bibitem{DEL18}
+Fredrik Bakken.
+\newblock Python flask on unikraft, Sep 2021 available at
+  https://medium.com/@fredrik.bakken/python-flask-on-unikraft-ced8ac327c07.
 
 \bibitem{DEL02}
 A.~Baumann, P.~Barham, PE. Dagand, T.~Harris, R.~Isaacs, S.~Peter, T.~Roscoe,
@@ -32,12 +44,30 @@ B.~Gerofi, A.~Santogidis, D.~Martinet, and Y.~Ishikawa.
   Distributed Computing (HPDC '18)}, pages 2--13. Association for Computing
   Machinery, 2018.
 
+\bibitem{DEL23}
+HermitCore.
+\newblock libhermit.
+\newblock {\em GitHub repository}, 2017, available at
+  https://github.com/hermitcore/libhermit.
+
+\bibitem{DEL19}
+M.~Hopkinson.
+\newblock With silicon pushed to its limits, what will power the next
+  electronics revolution?, 2015 available at
+  https://phys.org/news/2015-08-silicon-limits-power-electronics-revolution.html.
+
 \bibitem{DEL13}
 S.~H. Jeon, S.~J. Cha, Ramneek, Y.~J. Jeong, J.~M. Kim, and S.~Jung.
 \newblock Azalea-unikernel: Unikernel into multi-kernel operating system for
   manycore systems.
 \newblock In {\em 2018 International Conference on Information and
   Communication Technology Convergence (ICTC)}, pages 1096--1099, 2018.
+
+\bibitem{DEL21}
+C.~I. King.
+\newblock powerstat.
+\newblock {\em GitHub repository}, 2013, available at
+  https://github.com/ColinIanKing/powerstat.
 
 \bibitem{DEL14}
 S.~Kuenzer, V.~A. Badoiu, H.~Lefeuvre, S.~Santhanam, A.~Jung, G.~Gain,
@@ -53,6 +83,12 @@ G.~Longree.
 \newblock {\em GitHub repository}, 2018, available at
   https://github.com/cetic/unikernels.
 
+\bibitem{DEL25}
+MirageOS.
+\newblock mirage.
+\newblock {\em GitHub repository}, 2013, available at
+  https://github.com/mirage/mirage.
+
 \bibitem{DEL15}
 G.~E. Moore.
 \newblock Progress in digital integrated electronics [technical literaiture,
@@ -60,6 +96,18 @@ G.~E. Moore.
   international electron devices meeting, ieee, 1975, pp. 11-13.].
 \newblock {\em IEEE Solid-State Circuits Society Newsletter}, 11(3):36--37,
   2006.
+
+\bibitem{DEL27}
+pyenv.
+\newblock pyenv.
+\newblock {\em GitHub repository}, 2013, available at
+  https://github.com/pyenv/pyenv.
+
+\bibitem{DEL24}
+RIKEN-SysSoft.
+\newblock mckernel.
+\newblock {\em GitHub repository}, 2018, available at
+  https://github.com/RIKEN-SysSoft/mckernel.
 
 \bibitem{DEL04}
 R.Riesen, A.~Barney Maccabe, B.~Gerofi, DN. Lombard, JJ. Lange, K.~Pedretti,
@@ -69,5 +117,22 @@ R.Riesen, A.~Barney Maccabe, B.~Gerofi, DN. Lombard, JJ. Lange, K.~Pedretti,
 \newblock In {\em 5th International Workshop on Runtime and Operating Systems
   for Supercomputers (ROSS '15)}, pages 1--9. Association for Computing
   Machinery, 2015.
+
+\bibitem{DEL22}
+Operating systems lab.
+\newblock Azalea.
+\newblock {\em GitHub repository}, 2018, available at
+  https://github.com/oslab-swrc/Azalea.
+
+\bibitem{DEL26}
+Unikraft.org.
+\newblock Unikraft.
+\newblock 2017, available at https://github.com/unikraft/unikraft.
+
+\bibitem{DEL20}
+A.~V.~D. Ven.
+\newblock powertop.
+\newblock {\em GitHub repository}, 2010, available at
+  https://github.com/fenrus75/powertop.
 
 \end{thebibliography}

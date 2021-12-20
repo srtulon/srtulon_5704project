@@ -5,44 +5,49 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 16 items.
 Database file #1: my-bibliography.bib
-You've used 9 entries,
+Warning--I'm ignoring DEL17's extra "journal" field
+--line 186 of file my-bibliography.bib
+Warning--to sort, need author or key in DEL17
+Warning--empty journal in DEL26
+You've used 20 entries,
             2118 wiz_defined-function locations,
-            559 strings with 6492 characters,
-and the built_in function-call counts, 4720 in all, are:
-= -- 427
-> -- 335
+            617 strings with 7849 characters,
+and the built_in function-call counts, 6903 in all, are:
+= -- 633
+> -- 406
 < -- 6
-+ -- 134
-- -- 124
-* -- 367
-:= -- 776
-add.period$ -- 31
-call.type$ -- 9
-change.case$ -- 89
++ -- 165
+- -- 144
+* -- 453
+:= -- 1168
+add.period$ -- 60
+call.type$ -- 20
+change.case$ -- 132
 chr.to.int$ -- 0
-cite$ -- 9
-duplicate$ -- 161
-empty$ -- 295
-format.name$ -- 124
-if$ -- 995
+cite$ -- 22
+duplicate$ -- 262
+empty$ -- 498
+format.name$ -- 144
+if$ -- 1446
 int.to.chr$ -- 0
-int.to.str$ -- 9
-missing$ -- 9
-newline$ -- 48
-num.names$ -- 18
-pop$ -- 101
+int.to.str$ -- 20
+missing$ -- 17
+newline$ -- 99
+num.names$ -- 38
+pop$ -- 162
 preamble$ -- 1
-purify$ -- 80
+purify$ -- 112
 quote$ -- 0
-skip$ -- 125
+skip$ -- 204
 stack$ -- 0
-substring$ -- 200
-swap$ -- 61
+substring$ -- 255
+swap$ -- 71
 text.length$ -- 6
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 36
-warning$ -- 0
-while$ -- 31
-width$ -- 10
-write$ -- 103
+type$ -- 80
+warning$ -- 2
+while$ -- 51
+width$ -- 22
+write$ -- 204
+(There were 3 warnings)
