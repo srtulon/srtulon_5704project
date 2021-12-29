@@ -1,0 +1,14 @@
+definition of lwk in kind of vague. FWK was invention with compatibility in mind and lwk was invented with scalibilty in mind
+
+
+In particular, the factoring of the OS node into separate CPU
+driver and monitor components is not required by the model; our
+experience is that it is not optimal for performance, but has compelling
+engineering advantages. The downside of the separation
+is that invocations from processes to the OS are now mostly local
+RPC calls (and hence two context switches) rather than system
+calls, adding a constant overhead on current hardware of several
+thousand cycles. However, this is constant as the number of cores
+increases. Moving the monitor into kernel space would remove this
+penalty, at the cost of a more complex kernel-mode code base.
+ 

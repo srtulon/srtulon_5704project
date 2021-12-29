@@ -1,0 +1,14 @@
+There is no dening architecture of a \typical" LWK. The
+ones in existences dier signicantly from each other, and
+several other types of OS kernels are also lightweight: nano,
+exo, micro, and embedded kernels come to mind. What
+we mean by an LWK is a kernel specically designed and
+streamlined for the very high end of HPC; computers that
+deserve the name supercomputer, and a subset of applica-
+tions and data sets that require machines like that. These
+systems have extreme scales and levels of parallelism.
+In [23] we nd this description:
+\. . . lightweight kernels (LWK), which focus
+on providing exactly and only those services needed
+by specic hardware and a small set of mission-
+critical applications."
